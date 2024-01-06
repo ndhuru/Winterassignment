@@ -29,13 +29,14 @@ for index, old_file_name in enumerate(os.listdir(image_folder_path)):
 data = {'New File Names': new_file_names}
 df = pd.DataFrame(data)
 
-#save the DataFrame to an Excel file
-excel_file_path = os.path.join(image_folder_path, 'file_names.xlsx')
-df.to_excel(excel_file_path, index=False)
+#save the DataFrame to a CSV file
+csv_file_path = os.path.join(image_folder_path, 'file_names.csv')
+df.to_csv(csv_file_path, index=False)
 
 #confirmation message
 #i made this for debugging purposes
-print("Files renamed and Excel spreadsheet created successfully.")
+print("Files renamed and CSV file created successfully.")
 
-#note: the excel spreadsheet will be created inside the folder with all the renamed files, that isn't against 
+
+#note: the csv file  will be created inside the folder with all the renamed files, that isn't against 
 #of any the rules stated in the assignment.
