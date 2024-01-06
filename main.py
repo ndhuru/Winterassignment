@@ -9,7 +9,7 @@ text_file_path = os.path.join(image_folder_path, 'renamed_files.txt')
 
 # create the text file with renamed names
 # this will serve to help me rename the files in the folder alongside with directly putting the
-# filenames in the csv file instead of copying from the folder itself
+# filenames in the csv instead of copying from the folder itself
 with open(text_file_path, 'w') as file:
     for i in range(1, 2001):
         file.write(f'PWP2024_{i:07d}N_DHURUVA.JPG\n')
