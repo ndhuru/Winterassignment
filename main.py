@@ -12,7 +12,7 @@ text_file_path = os.path.join(image_folder_path, 'renamed_files.txt')
 # filenames in the csv instead of copying from the folder itself
 with open(text_file_path, 'w') as file:
     for i in range(1, 2001):
-        file.write(f'PWP2024_{i:07d}N_DHURUVA.JPG\n')
+        file.write(f'PWP2024_{i:07d}N_NEEL.JPG\n')
 
 # read the new file names from the text file
 with open(text_file_path, 'r') as file:
